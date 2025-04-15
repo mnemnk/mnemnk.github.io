@@ -42,9 +42,9 @@ const config = defineConfig({
 					hover: '#00eceb',
 					gradient: {
 						start: '#00c4a0',
-						end: '#00eceb',
-					},
-				},
+						end: '#00eceb'
+					}
+				}
 			}),
 			siteConfig: {
 				title: 'Mnemnk',
