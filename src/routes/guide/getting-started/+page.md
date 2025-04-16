@@ -20,7 +20,6 @@ This installation guide primarily focuses on setting up Mnemnk in a Windows envi
 #### Installing Various Build Tools
 
 While pre-built binaries of Mnemnk App are available from GitHub, many agents, including Mnemnk Core Agents, assume that users have their own development environment.
-This is because Mnemnk aims to build an open AI agent environment through mutual assistance from the developer community. By not requiring binary distribution of agents, Mnemnk reduces the burden on developers and makes it easier to develop and distribute new agents.
 
 The tools you need will vary depending on the agent.
 For the installation described on this page, you'll need Git and Rust.
