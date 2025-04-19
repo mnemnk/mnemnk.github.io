@@ -22,6 +22,10 @@ const config = defineConfig({
 									title: 'Getting Started',
 									to: '/guide/getting-started/',
 								},
+								{
+									title: 'Lifelogging Agents',
+									to: '/guide/lifelogging-agents/',
+								},
 							]
 						},
 					],
