@@ -1,15 +1,12 @@
 ---
 title: Getting Started
 ---
-
-## Installing Mnemnk
-
-This section explains how to get started with Mnemnk.
+This page explains how to get started with Mnemnk.
 
 Mnemnk App is created using Tauri and can run on Windows, macOS, and Linux.
 This installation guide primarily focuses on setting up Mnemnk in a Windows environment.
 
-### Installing Mnemnk App (Windows)
+## Installing Mnemnk App (Windows)
 
 Download Mnemnk App from the [GitHub releases page](https://github.com/mnemnk/mnemnk-app/releases). The `_aarch64.dmg` file is for macOS, `_amd64.deb` is for Linux, and `_x64_en-US.msi` is for Windows.
 
@@ -38,16 +35,15 @@ Mnemnk App doesn't open a window just by launching it. You can confirm it's runn
 
 To open the window, either select "Show" from the menu of the tray icon or double-click the icon created on the desktop.
 
-### Configuring Mnemnk App
+## Configuring Mnemnk App
 
 When you start Mnemnk for the first time, the Settings page will open. (If it doesn't appear, click the gear ⚙ icon.)
-
 
 ![](/images/guide/getting-started/settings.png)
 
 At a minimum, you need to configure the Mnemnk Directory.
 
-#### Mnemnk Directory
+### Mnemnk Directory
 
 Specify an empty directory (folder) as the Mnemnk Directory. The following three directories will be created there:
 
@@ -62,22 +58,22 @@ Database files might be corrupted.
 
 <Expansion title="Other Settings (Optional)" showIcon={false}>
 
-#### Auto Start
+### Auto Start
 
 When enabled, Mnemnk App will automatically start when you login.
 
-#### Shortcut Keys
+### Shortcut Keys
 
 - Global Shortcut: Shortcut to invoke Mnemnk App.
 - Fullscreen: Full-screen display
 - Screenshot Only: Hide information in the daily view. The space key is set by default.
 - Search: Go to the search page
 
-#### Thumbnail Width / Height
+### Thumbnail Width / Height
 
 The size of thumbnails used in the daily page. If only one is specified, the aspect ratio of the image will be preserved. The default is `Height = 36`.
 
-#### Day Start Hour
+### Day Start Hour
 
 Set what hour should be considered the start of a day on the daily page. The default is 0 (12:00 am). Night owls might find that with the default setting, late-night work is split between two days, so it's good to set this according to your bedtime.
 
@@ -85,8 +81,8 @@ If you change this setting, click Reindex YMD to reindex past data. (Don't close
 
 </Expansion>
 
-### Summary
+## Summary
 
-In this section, we learned how to install, set up, and run Mnemnk App.
+In this page, we learned how to install, set up, and run Mnemnk App.
 
 If you want to use Mnemnk as a lifelogging tool, please proceed to install the [Lifelogging Agents](/guide/lifelogging-agents).
