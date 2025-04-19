@@ -89,5 +89,4 @@ If you change this setting, click Reindex YMD to reindex past data. (Don't close
 
 In this section, we learned how to install, set up, and run Mnemnk App.
 
-If you want to use Mnemnk as a lifelogging tool, please proceed to install the [lifelogging agent](/guide/lifelogging-agents).
-
+If you want to use Mnemnk as a lifelogging tool, please proceed to install the [Lifelogging Agents](/guide/lifelogging-agents).
