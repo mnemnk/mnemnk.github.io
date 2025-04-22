@@ -15,12 +15,12 @@ const config = defineConfig({
 							collapsible: true,
 							items: [
 								{
-									title: 'What is Mnemnk?',
-									to: '/guide/introduction/',
-								},
-								{
 									title: 'Getting Started',
 									to: '/guide/getting-started/',
+								},
+								{
+									title: 'Installation',
+									to: '/guide/installation/',
 								},
 								{
 									title: 'Lifelogging Agents',
