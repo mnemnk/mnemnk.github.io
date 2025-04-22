@@ -49,21 +49,21 @@ Choose Import from the File menu, and a file dialog will appear. Select `logging
 
 The agents will be loaded in a stopped state, so press the play button ▶ at the bottom center to start the agents.
 
-![](/images/guide/getting-started/screenshot-lifelogging-agents-imported.png)
+![](/images/guide/lifelogging-agents/screenshot-lifelogging-agents-imported.png)
 
 When started, the agents' colors will brighten.
 
-![](/images/guide/getting-started/screenshot-lifelogging-agents.png)
+![](/images/guide/lifelogging-agents/screenshot-lifelogging-agents.png)
 
 Select "Save" from the File menu to save the configuration. (It will be saved to `agent_flows/logging.json`)
 
 Click Home at the left end of the navigation bar at the top of the screen, and reload (Ctrl+R). You'll notice that today's date has changed, indicating that data has been saved. 
 
-![](/images/guide/getting-started/first-logging.png)
+![](/images/guide/lifelogging-agents/first-logging.png)
 
 Click to check it out.
 
-![](/images/guide/getting-started/first-daily-page.png)
+![](/images/guide/lifelogging-agents/first-daily-page.png)
 
 Congratulations! 🎉
 
@@ -74,11 +74,11 @@ Recording only happens while Mnemnk App is running in the background. To keep re
 ## Installing Mnemnk Browser Extension
 
 What the author personally finds most useful is the integration with web browsing through the browser.
-In fact, Mnemnk's development began with this feature[^1].
+In fact, Mnemnk's development began with this feature.
 
 Using the [Mnemnk Browser Extension](https://github.com/mnemnk/mnemnk-browser-extension), page navigations in the browser are sent to the Mnemnk API and can be utilized by Mnemnk App.
 
-To install it[^2]:
+To install it:
 
 1. Open the release page and download `mnemnk-X.Y.Z-chrome.zip`.
 2. Open Chrome's Manage extensions `chrome://extensions/`.
@@ -91,7 +91,3 @@ You can optionally specify the address and token for the Mnemnk API agent from t
 
 In this page, we learned how to install Mnemnk lifelogging Agents and the Mnemnk Browser Extension.
 As you can see from the fact that even the basic lifelogging function of Mnemnk App is provided as an external program, the information Mnemnk App collects and how it is utilized depends on how you build your agents. You can use Mnemnk as a lifelogging tool as the author envisions, or not.
-
-[^1]: Development initially began in March 2020 under the name "everything." That's a story for another time.
-
-[^2]: We're also working on submitting it to the Chrome Web Store, but there are various procedures needed, such as having a homepage with a Privacy Policy...

@@ -1,88 +1,111 @@
 ---
 title: Getting Started
 ---
-This page explains how to get started with Mnemnk.
+Here, I'll explain the basic concepts and operations of Mnemnk for new users.
 
-Mnemnk App is created using Tauri and can run on Windows, macOS, and Linux.
-This installation guide primarily focuses on setting up Mnemnk in a Windows environment.
+If you already have Mnemnk installed, you can follow along as you read.
 
-## Installing Mnemnk App (Windows)
+## Agents
 
-Download Mnemnk App from the [GitHub releases page](https://github.com/mnemnk/mnemnk-app/releases). The `_aarch64.dmg` file is for macOS, `_amd64.deb` is for Linux, and `_x64_en-US.msi` is for Windows.
+Mnemnk allows you to perform various processes by freely combining agents.
 
+![](/images/guide/getting-started/initial-agent-page.png)
 
-![](/images/guide/getting-started/mnemnk-release-page.png)
+Let's place a Counter agent by selecting Core/Utils/Counter from the "Agents" menu in the top right of the Agents page.
 
-If you see the following warning when opening the downloaded file, click "More info" and then click "Run anyway".
+![](/images/guide/getting-started/first-agent.png)
 
-![](/images/guide/getting-started/windows-protect.png)
+A newly placed agent starts in a stopped state.
 
-When you run it, a setup wizard will open. Follow the wizard to complete the installation.
+You can start the agent by pressing the play button ▶ at the bottom of the screen or by right-clicking the agent and selecting "Start".
 
-![](/images/guide/getting-started/mnemnk-setup-wizard1.png)
+![](/images/guide/getting-started/start-agent.png)
 
-![](/images/guide/getting-started/mnemnk-setup-wizard2.png)
+Agents have inputs and outputs.
 
-You can install it anywhere you want.
+Next, let's connect to other agents.
 
-![](/images/guide/getting-started/mnemnk-setup-wizard3.png)
+Place a Core/Input//Unit Input agent and connect the `unit` handle (left side) of the Unit Input to the `in` handle (right side) of the Counter.
 
-Accept the UAC prompt when it appears.
+![](/images/guide/getting-started/connect-agents.png)
 
-![](/images/guide/getting-started/mnemnk-setup-wizard4.png)
+Even when you start the Unit Input agent, the Counter value won't change.
 
-Mnemnk App doesn't open a window just by launching it. You can confirm it's running in the system tray at the bottom right of your desktop.
+![](/images/guide/getting-started/start-input.png)
 
-To open the window, either select "Show" from the menu of the tray icon or double-click the icon created on the desktop.
+When you click the unit on the Unit Input, the Counter value increases.
+This happens because Unit Input sends a signal, and Counter receives it to increase its value.
 
-## Configuring Mnemnk App
+![](/images/guide/getting-started/click-input.png)
 
-When you start Mnemnk for the first time, the Settings page will open. (If it doesn't appear, click the gear ⚙ icon.)
+Mnemnk agents don't just run once when the play button is pressed; they continue to run constantly.
 
-![](/images/guide/getting-started/settings.png)
+To confirm this, let's connect a Core/Utils/Interval Timer to the Counter.
 
-At a minimum, you need to configure the Mnemnk Directory.
+![](/images/guide/getting-started/interval-timer.png)
 
-### Mnemnk Directory
+Agents process according to their inputs (if they have any) and produce outputs as needed.
 
-Specify an empty directory (folder) as the Mnemnk Directory. The following three directories will be created there:
+## Flows
 
-- agent_flows: Where agent flows are saved.
-- agents: Place agents here.
-- data: Where the database and screenshots are saved.
+A collection of placed and connected agents is called a "flow."
+Mnemnk can manage multiple flows.
 
-:::warning
-Directories in cloud storage (OneDrive, iCloud, etc.) are not recommended.
-Database files might be corrupted.
-:::
+You can create a new flow from File > New.
 
-<Expansion title="Other Settings (Optional)" showIcon={false}>
+![](/images/guide/getting-started/new-flow.png)
 
-### Auto Start
+Enter a flow name, and a new empty flow will be created.
 
-When enabled, Mnemnk App will automatically start when you login.
+![](/images/guide/getting-started/new-flow-dialog.png)
 
-### Shortcut Keys
+![](/images/guide/getting-started/flow2.png)
 
-- Global Shortcut: Shortcut to invoke Mnemnk App.
-- Fullscreen: Full-screen display
-- Screenshot Only: Hide information in the daily view. The space key is set by default.
-- Search: Go to the search page
+Flows can be switched using the "Flows" menu on the left side of the screen.
 
-### Thumbnail Width / Height
+The <span class="flex-none inline-block w-2 h-2 bg-green-500 rounded-full" title="active"></span> mark shown to the left of a flow name indicates that there are active agents within that flow.
 
-The size of thumbnails used in the daily page. If only one is specified, the aspect ratio of the image will be preserved. The default is `Height = 36`.
+An important point to note is that even when a flow is not displayed (i.e., it's in the background), the agents within that flow continue to run.
 
-### Day Start Hour
+![](/images/guide/getting-started/background-flow.png)
 
-Set what hour should be considered the start of a day on the daily page. The default is 0 (12:00 am). Night owls might find that with the default setting, late-night work is split between two days, so it's good to set this according to your bedtime.
+You can manipulate flows from the File menu.
+Created flows can be saved from File > Save (Ctrl+S).
+Saved flows are retained after Mnemnk App is closed and automatically loaded when next started.
 
-If you change this setting, click Reindex YMD to reindex past data. (Don't close the app for a while after clicking.)
+Additionally, agents that were running when you last closed Mnemnk App will automatically start when Mnemnk App launches.
 
-</Expansion>
+## Board
 
-## Summary
+Mnemnk has distinctive agents called Board In and Board Out.
 
-In this page, we learned how to install, set up, and run Mnemnk App.
+Set up a Board In agent and set the Board Name to `counter`.
+Then connect it to the count of the Counter.
 
-If you want to use Mnemnk as a lifelogging tool, please proceed to install the [Lifelogging Agents](/guide/lifelogging-agents).
+![](/images/guide/getting-started/board-in.png)
+
+This creates a board named `counter`.
+
+Next, set up a Board Out agent and a Display Data agent.
+By setting the Board Name of Board Out to `counter` as well, you can subscribe to the `counter` board you created earlier.
+
+![](/images/guide/getting-started/board-out.png)
+
+Even though Display Data is not directly connected to Counter, it can receive data through Board In and Board Out.
+
+Using Boards allows data exchange even between different flows.
+
+Move to "flow2" from Flows and create Board Out and Display Data as before.
+
+(You can also select multiple agents with shift + mouse drag and copy & paste them with Ctrl+C, Ctrl+V)
+
+![](/images/guide/getting-started/board-out-another-flow.png)
+
+You can see that the same value being updated in the "main" flow is also displayed in "flow2".
+This is because data is shared between flows through the board.
+
+## Conclusion
+
+Here, I've explained the basic concepts and operations of Mnemnk using simple agents.
+
+In actual use, you'll likely build more complex flows that analyze and utilize lifelogging data with AI agents, rather than simple counters. However, no matter how complex the flow becomes, the basic principles learned here—placement of agents, connections, and communication through boards—remain the same.
