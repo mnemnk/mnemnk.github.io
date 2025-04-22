@@ -1,7 +1,7 @@
 ---
 title: Installation
 ---
-This page explains how to get install Mnemnk.
+This page explains how to install Mnemnk.
 
 Mnemnk App is created using Tauri and can run on Windows, macOS, and Linux.
 This installation guide primarily focuses on setting up Mnemnk in a Windows environment.

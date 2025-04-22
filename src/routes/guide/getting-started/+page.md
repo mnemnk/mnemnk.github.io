@@ -25,7 +25,7 @@ Agents have inputs and outputs.
 
 Next, let's connect to other agents.
 
-Place a Core/Input//Unit Input agent and connect the `unit` handle (left side) of the Unit Input to the `in` handle (right side) of the Counter.
+Place a Core/Input/Unit Input agent and connect the `unit` handle (left side) of the Unit Input to the `in` handle (right side) of the Counter.
 
 ![](/images/guide/getting-started/connect-agents.png)
 
