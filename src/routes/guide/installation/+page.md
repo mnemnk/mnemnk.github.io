@@ -1,5 +1,3 @@
-I'll translate the content to English for you:
-
 ---
 title: Installing Mnemnk
 ---
