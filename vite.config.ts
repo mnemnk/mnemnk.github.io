@@ -15,12 +15,12 @@ const config = defineConfig({
 							collapsible: true,
 							items: [
 								{
-									title: 'Getting Started',
-									to: '/guide/getting-started/',
-								},
-								{
 									title: 'Installation',
 									to: '/guide/installation/',
+								},
+								{
+									title: 'Getting Started',
+									to: '/guide/getting-started/',
 								},
 								{
 									title: 'Lifelogging Agents',
