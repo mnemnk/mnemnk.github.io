@@ -32,6 +32,16 @@ const config = defineConfig({
 								},
 							]
 						},
+						{
+							title: 'Core Concepts',
+							collapsible: true,
+							items: [
+								{
+									title: 'Agents',
+									to: '/guide/agents/',
+								},
+							]
+						},
 					],
 				},
 				github: 'https://github.com/mnemnk/mnemnk-app',
