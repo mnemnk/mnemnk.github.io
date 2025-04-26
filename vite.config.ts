@@ -15,6 +15,10 @@ const config = defineConfig({
 							collapsible: true,
 							items: [
 								{
+									title: 'What is Mnemnk?',
+									to: '/guide/introduction/',
+								},
+								{
 									title: 'Installation',
 									to: '/guide/installation/',
 								},
