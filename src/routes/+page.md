@@ -14,17 +14,16 @@ actions:
 features:
   - title: Automatic Activity Recording
     description:
-      Mnemnk's distinctive feature lies in the combination of lifelogging and a multi-agent system.
-      Lifelogging is a technology that automatically records daily activities so they can be reviewed later.
-      Mnemnk automatically collects and chronologically organizes application usage history, browser browsing history, screen captures, and more.
+      The primary feature of Mnemnk is the combination of lifelogging and a multi-agent system.
+      It automatically collects and chronologically organizes application usage history, browser browsing history, screen captures, and more.
+      This allows users to review their activities later.
     icon:
       type: iconify
       collection: streamline-emojis
       name: floppy-disk
   - title: Privacy-Focused
     description:
-      While many modern AI assistants operate on a cloud basis and need to send user data to external servers, Mnemnk takes a different approach.
-      All information collected by Mnemnk is stored locally and processed by locally operating agents.
+      While many modern AI assistants operate on a cloud basis and need to send user data to external servers, Mnemnk stores all information locally and processes it with locally operating agents.
       Data will not be sent externally unless the user explicitly uses agents that transmit information externally.
     icon:
       type: iconify
@@ -32,8 +31,9 @@ features:
       name: locked-with-key
   - title: Agent-Based Extensibility
     description:
-      Using a visual flow-based UI, users can build complex systems linking multiple agents even without programming knowledge.
-      Agents can be developed in various programming languages, and users can customize the system by combining agents according to their needs.
+      System extensibility is implemented through agents.
+      Agents can be developed in various programming languages.
+      By combining various agents using a visual flow-based UI, users can build complex systems of interconnected agents without programming knowledge.
     icon:
       type: iconify
       collection: streamline-emojis
