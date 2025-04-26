@@ -40,6 +40,10 @@ const config = defineConfig({
 									title: 'Agents',
 									to: '/guide/agents/',
 								},
+								{
+									title: 'Flow and Channel',
+									to: '/guide/flow-and-channel/',
+								},
 							]
 						},
 					],
