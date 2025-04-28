@@ -10,25 +10,25 @@ These installation instructions focus primarily on setting up Mnemnk in a Window
 
 Download Mnemnk App from the [GitHub releases page](https://github.com/mnemnk/mnemnk-app/releases). The files ending with `_aarch64.dmg` are for macOS, `_amd64.deb` for Linux, and `_x64_en-US.msi` for Windows.
 
-![](/images/guide/installation/mnemnk-release-page.png)
+![](/images/guide/intro/installation/mnemnk-release-page.png)
 
 If you see the following warning when opening the downloaded file, click "More info" and then click "Run anyway".
 
-![](/images/guide/installation/windows-protect.png)
+![](/images/guide/intro/installation/windows-protect.png)
 
 When you run it, a setup wizard will open. Follow the wizard to complete the installation.
 
-![](/images/guide/installation/mnemnk-setup-wizard1.png)
+![](/images/guide/intro/installation/mnemnk-setup-wizard1.png)
 
-![](/images/guide/installation/mnemnk-setup-wizard2.png)
+![](/images/guide/intro/installation/mnemnk-setup-wizard2.png)
 
 You can install it anywhere you want.
 
-![](/images/guide/installation/mnemnk-setup-wizard3.png)
+![](/images/guide/intro/installation/mnemnk-setup-wizard3.png)
 
 Accept the UAC prompt when it appears.
 
-![](/images/guide/installation/mnemnk-setup-wizard4.png)
+![](/images/guide/intro/installation/mnemnk-setup-wizard4.png)
 
 Mnemnk App doesn't open a window just by launching it. You can confirm it's running in the system tray at the bottom right of your desktop.
 
@@ -38,7 +38,7 @@ To open the window, either select "Show" from the menu of the tray icon or doubl
 
 When you start Mnemnk for the first time, the Settings page will open. (If it doesn't appear, click the gear ⚙ icon)
 
-![](/images/guide/installation/settings.png)
+![](/images/guide/intro/installation/settings.png)
 
 At a minimum, you need to configure the Mnemnk Directory.
 

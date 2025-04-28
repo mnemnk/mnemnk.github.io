@@ -4,7 +4,7 @@ title: Agents
 
 When discussing agents, one might initially think of intelligent AI agents capable of complex processing.
 
-![](/images/guide/agents/chat-model-agent.png)
+![](/images/guide/concepts/agents/chat-model-agent.png)
 
 While this is certainly one type of agent, in Mnemnk the term encompasses a unified approach to handling various processes, from simple to sophisticated.
 
@@ -19,7 +19,7 @@ This "society of agents" model forms the foundation of today's multi-agent syste
 
 In Mnemnk, combining these various agents allows for building flows that perform complex processing.
 
-![](/images/guide/agents/simple-chat-bot.png)
+![](/images/guide/concepts/agents/simple-chat-bot.png)
 
 ## Agent
 
@@ -31,7 +31,7 @@ When merely placed, agents aren't yet active and appear dark and semi-transparen
 
 The following example shows the placement of `Integer Input`, `Memory`, and `Display Data` agents.
 
-![](/images/guide/agents/first-agent-flow1.png)
+![](/images/guide/concepts/agents/first-agent-flow1.png)
 
 ### Config
 
@@ -69,7 +69,7 @@ Connecting these channels enables communication between agents.
 After connecting `Integer Input`'s `integer` to `Memory`'s `in`, and `Memory`'s `memory` to `Display Data`'s `data`, press the play button ▶ at the bottom of the screen to activate the flow.
 This results in the following display:
 
-![](/images/guide/agents/first-agent-flow2.png)
+![](/images/guide/concepts/agents/first-agent-flow2.png)
 
 When the value of `Integer Input` changes, the display in `Display Data` updates accordingly.
 `Display Data` shows up to 10 of the most recent values output by `Memory`.
@@ -88,7 +88,7 @@ The method is not called only when all input channel values are ready.
 The results of `process` are then output to the output channels.
 Some agents can produce different outputs to multiple output channels.
 
-![](/images/guide/agents/web-base-loader-agent.png)
+![](/images/guide/concepts/agents/web-base-loader-agent.png)
 
 In some cases, depending on the data received, `process` might not produce any output.
 
@@ -101,7 +101,7 @@ Agents in execution state wait for data to be sent to their input channels, whic
 Some agents, like `Application` or `Screen`, can actively output data in the execution state without requiring `process` calls.
 Flows execute through this data transmission from agent to agent.
 
-<video src="/images/guide/agents/interval-timer.mp4" controls="true" width="720px">interval timer</video>
+<video src="/images/guide/concepts/agents/interval-timer.mp4" controls="true" width="720px">interval timer</video>
 
 Agents don't just execute once in a flow; they remain in execution state until stopped, with `process` called each time input is received.
 
