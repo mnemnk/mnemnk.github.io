@@ -6,15 +6,15 @@ Boards function like bulletin boards where agents can exchange information with 
 
 Mnemnk has two types of nodes: `Board In` and `Board Out`.
 
-![](/images/guide/board/board-in-out.png)
+![](/images/guide/concepts/board/board-in-out.png)
 
 Agents can write values to a "board" by sending values to `Board In` with a specified board name.
 
-![](/images/guide/board/board-in.png)
+![](/images/guide/concepts/board/board-in.png)
 
 The written values are output to agents connected to `Board Out` nodes with the same board name.
 
-![](/images/guide/board/board-out.png)
+![](/images/guide/concepts/board/board-out.png)
 
 Using boards provides a way to transmit information without directly connecting agents.
 
@@ -41,7 +41,7 @@ In this case, `Board In` uses the channel name that the connected agent used whe
 
 This is used, for example, when writing API agent outputs to a board.
 
-![](/images/guide/board/board-star.png)
+![](/images/guide/concepts/board/board-star.png)
 
 `Board Out` cannot use `*` as a board name.
 

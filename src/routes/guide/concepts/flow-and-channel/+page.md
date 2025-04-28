@@ -24,7 +24,7 @@ There are no specific restrictions on connections between agents.
 
 You can connect multiple agents to a single input channel, and you can also connect a single output channel to multiple agents.
 
-![](/images/guide/flow-and-channel/in-out-channels.png)
+![](/images/guide/concepts/flow-and-channel/in-out-channels.png)
 
 An agent's `process` method is called when data is sent to its input channel, and it can produce output at any time.
 

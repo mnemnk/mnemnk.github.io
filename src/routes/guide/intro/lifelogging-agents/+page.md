@@ -48,21 +48,21 @@ Choose Import from the File menu, and a file dialog will appear. Select `logging
 
 The agents will be loaded in a stopped state, so press the play button ▶ at the bottom center to start the agents.
 
-![](/images/guide/lifelogging-agents/screenshot-lifelogging-agents-imported.png)
+![](/images/guide/intro/lifelogging-agents/screenshot-lifelogging-agents-imported.png)
 
 When started, the agents' colors will brighten.
 
-![](/images/guide/lifelogging-agents/screenshot-lifelogging-agents.png)
+![](/images/guide/intro/lifelogging-agents/screenshot-lifelogging-agents.png)
 
 Select "Save" from the File menu to save the flow (it will be saved to `agent_flows/logging.json`).
 
 Click Home at the left end of the navigation bar at the top of the screen, and reload (Ctrl+R). You'll notice that today's date has changed, indicating that data has been saved.
 
-![](/images/guide/lifelogging-agents/first-logging.png)
+![](/images/guide/intro/lifelogging-agents/first-logging.png)
 
 Click to check it out.
 
-![](/images/guide/lifelogging-agents/first-daily-page.png)
+![](/images/guide/intro/lifelogging-agents/first-daily-page.png)
 
 Your activities are now being recorded! 🎉
 

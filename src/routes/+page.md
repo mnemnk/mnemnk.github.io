@@ -6,7 +6,7 @@ tagline: A personal lifelogging platform that records your activities and enhanc
 actions:
   - label: Read the docs
     type: primary
-    to: /guide/introduction/
+    to: /guide/intro/introduction/
   - label: View on github
     type: flat
     to: https://github.com/mnemnk/mnemnk-app
